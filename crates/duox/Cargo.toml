@@ -1,0 +1,31 @@
+[package]
+name = "duox"
+description = "MIFARE DUOX (MF3E(H)x3) protocol library: secure messaging, authentication, PKI, SDM, simulator"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["pcsc"]
+pcsc = ["dep:pcsc"]
+
+[dependencies]
+aes.workspace = true
+cbc.workspace = true
+cmac.workspace = true
+cipher.workspace = true
+sha2.workspace = true
+p256.workspace = true
+bp256.workspace = true
+ecdsa.workspace = true
+crc32fast.workspace = true
+hex.workspace = true
+rand.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+zeroize.workspace = true
+pbkdf2.workspace = true
+hmac.workspace = true
+sha1.workspace = true
+pcsc = { workspace = true, optional = true }

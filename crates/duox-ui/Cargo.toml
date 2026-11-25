@@ -1,0 +1,13 @@
+[package]
+name = "duox-ui"
+description = "Desktop UI for MIFARE DUOX cards: card browser, CA / CRL manager, SDM tool"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+duox = { path = "../duox" }
+iced.workspace = true
+rfd.workspace = true
+hex.workspace = true
+serde_json.workspace = true
